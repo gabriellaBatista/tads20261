@@ -6,7 +6,7 @@ def download_history (
      multi_level_index:bool=False
 )->pd.DataFrame:
    """
-   Download historical data from yahoo finance.
+  Plot Download historical data from yahoo finance.
 
    Args:
        ticker (str):Ticker name.
@@ -17,7 +17,7 @@ def download_history (
         tickers=ticker,
     multi_level_index=multi_level_index
 
-   )
+   ).reset_index()
 
    return df
 
